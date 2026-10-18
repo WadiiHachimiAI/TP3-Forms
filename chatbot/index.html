@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Chatbot développé qui répond à vos questions">
+    <title>CR7 Chatbot</title>
+</head>
+<body>
+
+    <header>
+        <!-- En-tête -->
+        <img src="avatar.png" width="80" alt="Avatar de CR7">
+        <h1>CR7</h1>
+    </header>
+
+    <main>
+
+        <!-- Présentation -->
+        <section>
+            <h2>Présentation</h2>
+            <p>
+                CR7 est un assistant virtuel qui aide les utilisateurs
+                à trouver des livres et des informations sur la bibliothèque.
+            </p>
+        </section>
+
+        <!-- Capacités -->
+        <section>
+            <h2>Mes capacités</h2>
+            <ul>
+                <li>Rechercher un livre</li>
+                <li>Donner les horaires</li>
+                <li>Recommander des livres</li>
+                <li>Répondre aux questions</li>
+            </ul>
+        </section>
+
+        <!-- Conversation -->
+        <section>
+            <h2>Conversation</h2>
+
+            <p><strong>Vous :</strong> Bonjour !</p>
+            <p><strong>CR7 :</strong> Bonjour ! Comment puis-je vous aider ?</p>
+
+            <p><strong>Vous :</strong> Je cherche un livre sur Python.</p>
+            <p><strong>CR7 :</strong> Je peux vous aider à en trouver un.</p>
+
+            <p><strong>Vous :</strong> Où puis-je le trouver ?</p>
+            <p><strong>CR7 :</strong> Il se trouve dans la section informatique.</p>
+
+            <!-- Formulaire d'envoi du message -->
+            <form method="post">
+                <label for="message">Votre message</label>
+
+                <input
+                    type="text"
+                    id="message"
+                    name="message"
+                    maxlength="300"
+                    placeholder="Écrivez votre message..."
+                    required
+                >
+
+                <button type="submit">Envoyer</button>
+            </form>
+
+        </section>
+
+    </main>
+
+    <aside>
+
+        <!-- FAQ -->
+        <table border="1">
+            <caption><strong>FAQ</strong></caption>
+
+            <thead>
+                <tr>
+                    <th>Questions fréquentes</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Où puis-je trouver ce livre ?</td>
+                </tr>
+                <tr>
+                    <td>Comment puis-je m'inscrire dans cette bibliothèque ?</td>
+                </tr>
+                <tr>
+                    <td>Quel est le sujet de ce livre ?</td>
+                </tr>
+                <tr>
+                    <td>Quel est le prix de l'inscription ?</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Formulaire d'avis demandé dans le TP3 -->
+        <form method="post">
+            <fieldset>
+                <legend>Votre avis</legend>
+
+                <p>Choisissez une note :</p>
+
+                <input type="radio" id="avis1" name="note" value="1" required>
+                <label for="avis1">1</label>
+
+                <input type="radio" id="avis2" name="note" value="2">
+                <label for="avis2">2</label>
+
+                <input type="radio" id="avis3" name="note" value="3">
+                <label for="avis3">3</label>
+
+                <input type="radio" id="avis4" name="note" value="4">
+                <label for="avis4">4</label>
+
+                <input type="radio" id="avis5" name="note" value="5">
+                <label for="avis5">5</label>
+
+                <div>
+                    <label for="commentaire">Commentaire :</label>
+
+                    <textarea
+                        id="commentaire"
+                        name="commentaire"
+                        rows="3"
+                        maxlength="200"
+                        placeholder="Votre commentaire (facultatif)..."
+                    ></textarea>
+                </div>
+
+                <button type="submit">Envoyer mon avis</button>
+            </fieldset>
+        </form>
+
+    </aside>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>Assistant disponible 24h/24</p>
+    </footer>
+
+</body>
+</html>
